@@ -1,0 +1,6 @@
+VD: Tai khoan ngan hang
+- id: private
+- name: public/ default
+- cccd: private
+- address: public/ default
+- balance: private

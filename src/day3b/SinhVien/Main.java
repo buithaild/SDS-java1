@@ -9,6 +9,8 @@ public class Main {
         System.out.println("Diem trung binh: " + s1.diemTB());
 
         //-------------
-        SinhVien s2 = new SinhVien();
+        SinhVien s2 = new SinhVien(234, "Thai", 7, 9);
+        System.out.println(s2);
+        System.out.println("Diem trung binh: " + s2.diemTB());
     }
 }

@@ -34,10 +34,7 @@ public class MyPoint {
         this.y = y;
     }
     public int[] getXY(){
-        int[] xy = new int[2]; // Declare and initialize 2-element int array
-        xy[0] = this.x;
-        xy[1] = this.y;
-        return xy;
+        return new int[] {x, y} ;
     }
     public void setXY(int x, int y) {
         this.x = x;
@@ -59,14 +56,16 @@ public class MyPoint {
     }
 
     public double distance(MyPoint another) { // One MyPoint parameter
-        int xDiff = this.x - another.x;
-        int yDiff = this.y - another.y;
-        return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
+//        int xDiff = this.x - another.x;
+//        int yDiff = this.y - another.y;
+//        return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
+        return  distance(another.x, another.y);
     }
 
     public double distance() { // No parameters
-        int xDiff = this.x - 0;
-        int yDiff = this.y - 0;
-        return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
+//        int xDiff = this.x - 0;
+//        int yDiff = this.y - 0;
+//        return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
+        return  distance(0, 0);
     }
 }
